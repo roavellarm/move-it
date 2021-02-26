@@ -17,7 +17,7 @@ interface CountdownContextProps {
 const CountdownContext = createContext({} as CountdownContextData)
 
 let countdownTimeout: NodeJS.Timeout
-const INITIAL_STATE = 0.1 * 60
+const INITIAL_STATE = 0.05 * 60
 
 export function CountdownProvider({ children }: CountdownContextProps) {
   const { startNewChallenge } = useChallengesContext()
